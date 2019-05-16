@@ -1,8 +1,9 @@
-export default (moveEleWrapId,moveEleId) => {
+export default (moveEleId,maskerId) => {
     const d = document;
     const g = 'getElementById';
-    let moveEleWrap = d[g](moveEleWrapId);
     let moveEle = d[g](moveEleId);
+    let maskerIdEle = d[g](maskerId);
+    let moveEleWrap = moveEle.parentNode;
     let gundongY, sty , ety , curY;
     gundongY = sty = ety = curY = 0;
     const maxDis = slideRange()
@@ -52,4 +53,8 @@ export default (moveEleWrapId,moveEleId) => {
         const del = moveEleHeight - moveEleWrapHeight;
         return del > 0 ? del : 0;
     }
+    //阻止掉masker蒙版层的touchmove默认
+    maskerIdEle.addEventListener('touchmove',(e) => {
+        e.preventDefault();
+    },false)
 }
