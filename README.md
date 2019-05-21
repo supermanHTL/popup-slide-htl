@@ -2,7 +2,7 @@
 页面本身具有滚动条，弹窗后也有滚动条，此时滑动弹窗的内容体验不好，特别是在webview中会有其他问题。因此实现，弹窗可以滚动，底部不能滚动效果。
 
 ###使用方法：
-1、`npm install popup-slide-htl``
+1、``npm install popup-slide-htl``
 
 2、``import popupSlideHtl from 'popup-slide-htl'``
 
