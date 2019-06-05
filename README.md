@@ -10,7 +10,7 @@
 3、``popupSlideHtl(maskerId,moveId)`` 
 
 例子：
-maskerId 为蒙版层的id名称，moveId为滑动区域的名称
+maskerId 为蒙版层的id，moveId为滑动区域的id
 
 ```
     <div id="masker">
